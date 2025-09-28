@@ -3,43 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>バンド名 - オフィシャルサイト</title>
+    <title>NO_NAME - オフィシャルサイト</title>
     <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 <body>
 
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
     <div class="video-background">
-        <video autoplay muted loop id="myVideo">
+        <video autoplay muted loop playsinline id="main-video">
             <source src="path/to/your/video.mp4" type="video/mp4">
-            ブラウザが動画をサポートしていません。
+            あなたのブラウザは動画をサポートしていません。
         </video>
         <div class="video-overlay"></div>
     </div>
 
     <header class="main-header">
-        <nav>
-            <ul class="main-nav">
-                <li><a href="#top">TOP</a></li>
-                <li><a href="#schedule">SCHEDULE</a></li>
-                <li><a href="#live">LIVE</a></li>
-                <li><a href="#movie">MOVIE</a></li>
-                <li><a href="#store">ONLINE STORE</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-            </ul>
-        </nav>
+        <div class="logo">NO_NAME</div>
+        <div class="menu-icon" id="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
 
+    <nav class="side-menu" id="side-menu">
+        <ul>
+            <li><a href="#top">TOP</a></li>
+            <li><a href="#schedule">SCHEDULE</a></li>
+            <li><a href="#live">LIVE</a></li>
+            <li><a href="#movie">MOVIE</a></li>
+            <li><a href="#store">ONLINE STORE</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section id="hero">
-            <h1>バンド名</h1>
-            <p>最新のリリース情報やライブ情報をここに。</p>
+        <section id="top" class="hero-section">
+            <h1>NO_NAME</h1>
+            <p>最新のニュース、ライブ情報をお届けします。</p>
         </section>
 
-        <section id="schedule"></section>
-        <section id="live"></section>
-        <section id="movie"></section>
-        <section id="store"></section>
-        <section id="contact"></section>
+        <section id="schedule" class="content-section">
+            <h2>SCHEDULE</h2>
+            <p>今後のライブ、イベント出演情報を掲載しています。チケット情報や会場アクセスもこちらでご確認ください。</p>
+            <a href="/schedule.html" class="cta-button">詳細を見る</a>
+        </section>
+
+        <section id="live" class="content-section">
+            <h2>LIVE</h2>
+            <p>過去のライブ写真やセットリスト、ライブレポートを掲載しています。臨場感あふれる瞬間を写真でお楽しみください。</p>
+            <a href="/live.html" class="cta-button">詳細を見る</a>
+        </section>
+
+        <section id="movie" class="content-section">
+            <h2>MOVIE</h2>
+            <p>ミュージックビデオ、ライブ映像、オフショットなどを集めたギャラリーです。最新の動画をチェック！</p>
+            <a href="/movie.html" class="cta-button">詳細を見る</a>
+        </section>
+
+        <section id="store" class="content-section">
+            <h2>ONLINE STORE</h2>
+            <p>TシャツやCD、限定グッズなど、バンドのオリジナルアイテムはこちらでお買い求めいただけます。</p>
+            <a href="/store.html" class="cta-button">ストアへ行く</a>
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>CONTACT</h2>
+            <p>お仕事のご依頼、ファンレター、その他のお問い合わせはこちらから。SNSのリンクも掲載しています。</p>
+            <a href="/contact.html" class="cta-button">お問い合わせ</a>
+        </section>
     </main>
 
     <script src="script.js"></script>
